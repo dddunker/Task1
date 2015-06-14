@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonplaceholder.typicode.com/posts",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "id": "http://jsonplaceholder.typicode.com/posts/userId",
+      "type": "integer"
+    },
+    "id": {
+      "id": "http://jsonplaceholder.typicode.com/posts/id",
+      "type": "integer"
+    },
+    "title": {
+      "id": "http://jsonplaceholder.typicode.com/posts/title",
+      "type": "string"
+    },
+    "body": {
+      "id": "http://jsonplaceholder.typicode.com/posts/body",
+      "type": "string"
+    }
+  },
+  "required": [
+    "userId",
+    "id",
+    "title",
+    "body"
+  ]
+}
