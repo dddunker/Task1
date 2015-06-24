@@ -31,15 +31,23 @@
             <version>2.4.1</version>
         </dependency>
     </dependencies>
-    
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-compiler-plugin</artifactId>
-      <configuration>
-        <compilerVersion>1.5</compilerVersion>
-        <source>1.5</source>
-        <target>1.5</target>
-      </configuration>
-    </plugin>
+
+   <build>
+    <!-- To define the plugin version in your parent POM -->
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.3</version>
+         <configuration>
+            <compilerVersion>1.5</compilerVersion>
+            <source>1.5</source>
+            <target>1.5</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
     
 </project>
